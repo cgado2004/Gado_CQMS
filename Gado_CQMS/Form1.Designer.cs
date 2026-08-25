@@ -1,4 +1,4 @@
-﻿namespace Gado_CQMS
+namespace Gado_CQMS
 {
     partial class Form1
     {
@@ -28,204 +28,244 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.labelSubtitle = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.lblAge = new System.Windows.Forms.Label();
             this.txtAge = new System.Windows.Forms.TextBox();
+            this.lblReason = new System.Windows.Forms.Label();
             this.txtReason = new System.Windows.Forms.TextBox();
+            this.lblType = new System.Windows.Forms.Label();
             this.cboPatientType = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.btnAddToQueue = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.lblQueueNumber = new System.Windows.Forms.TextBox();
-            this.lblPatientType = new System.Windows.Forms.TextBox();
-            this.lblPriority = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblTicketHeader = new System.Windows.Forms.Label();
+            this.lblQueueNumberHeader = new System.Windows.Forms.Label();
+            this.lblPatientTypeHeader = new System.Windows.Forms.Label();
+            this.lblPriorityHeader = new System.Windows.Forms.Label();
+            this.lblQueueNumber = new System.Windows.Forms.Label();
+            this.lblPatientType = new System.Windows.Forms.Label();
+            this.lblPriority = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // labelTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(163, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(440, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CLINIC QUEUE MANAGEMENT SYSTEM";
+            this.labelTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Location = new System.Drawing.Point(70, 15);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(660, 40);
+            this.labelTitle.TabIndex = 0;
+            this.labelTitle.Text = "CLINIC QUEUE MANAGEMENT SYSTEM";
+            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // labelSubtitle
             // 
-            this.label2.Location = new System.Drawing.Point(54, 101);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Name";
+            this.labelSubtitle.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.labelSubtitle.Location = new System.Drawing.Point(70, 55);
+            this.labelSubtitle.Name = "labelSubtitle";
+            this.labelSubtitle.Size = new System.Drawing.Size(660, 20);
+            this.labelSubtitle.TabIndex = 1;
+            this.labelSubtitle.Text = "Barangay Apokon, Tagum City, Davao del Norte";
+            this.labelSubtitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // lblName
             // 
-            this.label3.Location = new System.Drawing.Point(308, 101);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Age";
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(424, 101);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 17);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Reason";
+            this.lblName.Location = new System.Drawing.Point(60, 110);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(120, 23);
+            this.lblName.TabIndex = 2;
+            this.lblName.Text = "Patient Name:";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(114, 98);
-            this.txtName.Multiline = true;
+            this.txtName.Location = new System.Drawing.Point(185, 108);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(174, 20);
-            this.txtName.TabIndex = 4;
+            this.txtName.Size = new System.Drawing.Size(260, 26);
+            this.txtName.TabIndex = 3;
+            // 
+            // lblAge
+            // 
+            this.lblAge.Location = new System.Drawing.Point(470, 110);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(60, 23);
+            this.lblAge.TabIndex = 4;
+            this.lblAge.Text = "Age:";
+            this.lblAge.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(349, 98);
-            this.txtAge.Multiline = true;
+            this.txtAge.Location = new System.Drawing.Point(520, 108);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(56, 20);
+            this.txtAge.Size = new System.Drawing.Size(100, 26);
             this.txtAge.TabIndex = 5;
+            // 
+            // lblReason
+            // 
+            this.lblReason.Location = new System.Drawing.Point(60, 155);
+            this.lblReason.Name = "lblReason";
+            this.lblReason.Size = new System.Drawing.Size(150, 23);
+            this.lblReason.TabIndex = 6;
+            this.lblReason.Text = "Reason for Visit:";
+            this.lblReason.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtReason
             // 
-            this.txtReason.Location = new System.Drawing.Point(484, 98);
-            this.txtReason.Multiline = true;
+            this.txtReason.Location = new System.Drawing.Point(185, 153);
             this.txtReason.Name = "txtReason";
-            this.txtReason.Size = new System.Drawing.Size(294, 20);
-            this.txtReason.TabIndex = 6;
-            this.txtReason.TextChanged += new System.EventHandler(this.txtReason_TextChanged);
+            this.txtReason.Size = new System.Drawing.Size(435, 26);
+            this.txtReason.TabIndex = 7;
+            // 
+            // lblType
+            // 
+            this.lblType.Location = new System.Drawing.Point(60, 200);
+            this.lblType.Name = "lblType";
+            this.lblType.Size = new System.Drawing.Size(150, 23);
+            this.lblType.TabIndex = 8;
+            this.lblType.Text = "Patient Type:";
+            this.lblType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // cboPatientType
             // 
+            this.cboPatientType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPatientType.FormattingEnabled = true;
             this.cboPatientType.Items.AddRange(new object[] {
-            "EMERGENCY",
-            "SENIOR PRIORITY",
-            "PRIORITY",
-            "REGULAR"});
-            this.cboPatientType.Location = new System.Drawing.Point(114, 132);
+            "Emergency",
+            "Senior",
+            "Pregnant",
+            "Regular"});
+            this.cboPatientType.Location = new System.Drawing.Point(185, 198);
             this.cboPatientType.Name = "cboPatientType";
-            this.cboPatientType.Size = new System.Drawing.Size(121, 21);
-            this.cboPatientType.TabIndex = 7;
-            this.cboPatientType.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(54, 135);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Type";
+            this.cboPatientType.Size = new System.Drawing.Size(200, 28);
+            this.cboPatientType.TabIndex = 9;
             // 
             // btnAddToQueue
             // 
             this.btnAddToQueue.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnAddToQueue.Location = new System.Drawing.Point(168, 201);
+            this.btnAddToQueue.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddToQueue.Location = new System.Drawing.Point(185, 250);
             this.btnAddToQueue.Name = "btnAddToQueue";
-            this.btnAddToQueue.Size = new System.Drawing.Size(100, 48);
-            this.btnAddToQueue.TabIndex = 9;
-            this.btnAddToQueue.Text = "ADD";
+            this.btnAddToQueue.Size = new System.Drawing.Size(180, 45);
+            this.btnAddToQueue.TabIndex = 10;
+            this.btnAddToQueue.Text = "ADD TO QUEUE";
             this.btnAddToQueue.UseVisualStyleBackColor = false;
-            this.btnAddToQueue.Click += new System.EventHandler(this.button1_Click);
+            this.btnAddToQueue.Click += new System.EventHandler(this.btnAddToQueue_Click);
             // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.Red;
-            this.btnClear.Location = new System.Drawing.Point(503, 201);
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(410, 250);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(100, 48);
-            this.btnClear.TabIndex = 10;
+            this.btnClear.Size = new System.Drawing.Size(180, 45);
+            this.btnClear.TabIndex = 11;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // lblTicketHeader
+            // 
+            this.lblTicketHeader.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTicketHeader.Location = new System.Drawing.Point(60, 320);
+            this.lblTicketHeader.Name = "lblTicketHeader";
+            this.lblTicketHeader.Size = new System.Drawing.Size(680, 24);
+            this.lblTicketHeader.TabIndex = 12;
+            this.lblTicketHeader.Text = "QUEUE TICKET";
+            this.lblTicketHeader.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblQueueNumberHeader
+            // 
+            this.lblQueueNumberHeader.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQueueNumberHeader.Location = new System.Drawing.Point(60, 355);
+            this.lblQueueNumberHeader.Name = "lblQueueNumberHeader";
+            this.lblQueueNumberHeader.Size = new System.Drawing.Size(200, 23);
+            this.lblQueueNumberHeader.TabIndex = 13;
+            this.lblQueueNumberHeader.Text = "QUEUE NUMBER";
+            this.lblQueueNumberHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblPatientTypeHeader
+            // 
+            this.lblPatientTypeHeader.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPatientTypeHeader.Location = new System.Drawing.Point(300, 355);
+            this.lblPatientTypeHeader.Name = "lblPatientTypeHeader";
+            this.lblPatientTypeHeader.Size = new System.Drawing.Size(200, 23);
+            this.lblPatientTypeHeader.TabIndex = 14;
+            this.lblPatientTypeHeader.Text = "PATIENT TYPE";
+            this.lblPatientTypeHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblPriorityHeader
+            // 
+            this.lblPriorityHeader.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriorityHeader.Location = new System.Drawing.Point(540, 355);
+            this.lblPriorityHeader.Name = "lblPriorityHeader";
+            this.lblPriorityHeader.Size = new System.Drawing.Size(200, 23);
+            this.lblPriorityHeader.TabIndex = 15;
+            this.lblPriorityHeader.Text = "PRIORITY";
+            this.lblPriorityHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lblQueueNumber
             // 
-            this.lblQueueNumber.Location = new System.Drawing.Point(81, 291);
-            this.lblQueueNumber.Multiline = true;
+            this.lblQueueNumber.BackColor = System.Drawing.Color.White;
+            this.lblQueueNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblQueueNumber.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQueueNumber.Location = new System.Drawing.Point(60, 390);
             this.lblQueueNumber.Name = "lblQueueNumber";
-            this.lblQueueNumber.Size = new System.Drawing.Size(154, 38);
-            this.lblQueueNumber.TabIndex = 11;
+            this.lblQueueNumber.Size = new System.Drawing.Size(200, 55);
+            this.lblQueueNumber.TabIndex = 16;
+            this.lblQueueNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPatientType
             // 
-            this.lblPatientType.Location = new System.Drawing.Point(300, 291);
-            this.lblPatientType.Multiline = true;
+            this.lblPatientType.BackColor = System.Drawing.Color.White;
+            this.lblPatientType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPatientType.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPatientType.Location = new System.Drawing.Point(300, 390);
             this.lblPatientType.Name = "lblPatientType";
-            this.lblPatientType.Size = new System.Drawing.Size(154, 38);
-            this.lblPatientType.TabIndex = 12;
+            this.lblPatientType.Size = new System.Drawing.Size(200, 55);
+            this.lblPatientType.TabIndex = 17;
+            this.lblPatientType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPriority
             // 
-            this.lblPriority.Location = new System.Drawing.Point(547, 291);
-            this.lblPriority.Multiline = true;
+            this.lblPriority.BackColor = System.Drawing.Color.White;
+            this.lblPriority.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPriority.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriority.Location = new System.Drawing.Point(540, 390);
             this.lblPriority.Name = "lblPriority";
-            this.lblPriority.Size = new System.Drawing.Size(154, 38);
-            this.lblPriority.TabIndex = 13;
-            // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(111, 332);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 23);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Queue Number";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Location = new System.Drawing.Point(327, 332);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 23);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "PatientType";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.Location = new System.Drawing.Point(579, 332);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(100, 23);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Priority";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPriority.Size = new System.Drawing.Size(200, 55);
+            this.lblPriority.TabIndex = 18;
+            this.lblPriority.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 560);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.lblPriority);
             this.Controls.Add(this.lblPatientType);
             this.Controls.Add(this.lblQueueNumber);
+            this.Controls.Add(this.lblPriorityHeader);
+            this.Controls.Add(this.lblPatientTypeHeader);
+            this.Controls.Add(this.lblQueueNumberHeader);
+            this.Controls.Add(this.lblTicketHeader);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnAddToQueue);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.cboPatientType);
+            this.Controls.Add(this.lblType);
             this.Controls.Add(this.txtReason);
+            this.Controls.Add(this.lblReason);
             this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.lblAge);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.labelSubtitle);
+            this.Controls.Add(this.labelTitle);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Clinic Queue Management System";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,23 +273,24 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Label labelSubtitle;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.Label lblReason;
         private System.Windows.Forms.TextBox txtReason;
+        private System.Windows.Forms.Label lblType;
         private System.Windows.Forms.ComboBox cboPatientType;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnAddToQueue;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.TextBox lblQueueNumber;
-        private System.Windows.Forms.TextBox lblPatientType;
-        private System.Windows.Forms.TextBox lblPriority;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblTicketHeader;
+        private System.Windows.Forms.Label lblQueueNumberHeader;
+        private System.Windows.Forms.Label lblPatientTypeHeader;
+        private System.Windows.Forms.Label lblPriorityHeader;
+        private System.Windows.Forms.Label lblQueueNumber;
+        private System.Windows.Forms.Label lblPatientType;
+        private System.Windows.Forms.Label lblPriority;
     }
 }
-

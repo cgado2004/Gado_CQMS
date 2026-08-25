@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1520" viewBox="0 0 1240 1520" font-family="Arial, Helvetica, sans-serif" font-size="12">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <style>
+    .box { fill:#fff; stroke:#000; stroke-width:1.6; }
+    .term { fill:#fff; stroke:#000; stroke-width:1.6; rx:15; ry:15; }
+    .diamond { fill:#fff; stroke:#000; stroke-width:1.6; }
+    .line { stroke:#000; stroke-width:1.4; fill:none; marker-end:url(#arrow); }
+    .linePlain { stroke:#000; stroke-width:1.4; fill:none; }
+    .t { text-anchor:middle; }
+    .lbl { text-anchor:middle; font-size:11; fill:#000; }
+  </style>
+
+  <!-- Start -->
+  <rect class="term" x="240" y="20" width="120" height="45"/>
+  <text class="t" x="300" y="47">Start</text>
+
+  <!-- Input -->
+  <rect class="box" x="190" y="95" width="220" height="55"/>
+  <text class="t" x="300" y="119">Input Patient Name, Age,</text>
+  <text class="t" x="300" y="136">Reason for Visit, Patient Type</text>
+
+  <!-- D1 Patient Type selected -->
+  <polygon class="diamond" points="300,195 400,235 300,275 200,235"/>
+  <text class="t" x="300" y="229">Patient Type</text>
+  <text class="t" x="300" y="245">selected?</text>
+
+  <!-- msg type -->
+  <rect class="box" x="560" y="208" width="260" height="55"/>
+  <text class="t" x="690" y="232">Display "Please select a</text>
+  <text class="t" x="690" y="249">Patient Type."</text>
+  <rect class="term" x="620" y="318" width="140" height="45"/>
+  <text class="t" x="690" y="345">End</text>
+
+  <!-- D2 Age valid -->
+  <polygon class="diamond" points="300,380 400,420 300,460 200,420"/>
+  <text class="t" x="300" y="414">Age is valid?</text>
+  <text class="t" x="300" y="430">(not empty, a number, &gt; 0)</text>
+
+  <!-- msg age -->
+  <rect class="box" x="560" y="392" width="260" height="55"/>
+  <text class="t" x="690" y="416">Display "Please enter a</text>
+  <text class="t" x="690" y="433">valid age."</text>
+  <rect class="term" x="620" y="502" width="140" height="45"/>
+  <text class="t" x="690" y="529">End</text>
+
+  <!-- P1 counter -->
+  <rect class="box" x="190" y="530" width="220" height="55"/>
+  <text class="t" x="300" y="554">queueCounter =</text>
+  <text class="t" x="300" y="571">queueCounter + 1</text>
+
+  <!-- P2 queue number -->
+  <rect class="box" x="190" y="615" width="220" height="55"/>
+  <text class="t" x="300" y="639">queueNumber = "Q" +</text>
+  <text class="t" x="300" y="656">Format(queueCounter, "000")</text>
+
+  <!-- D3 Emergency -->
+  <polygon class="diamond" points="300,715 400,760 300,805 200,760"/>
+  <text class="t" x="300" y="754">Patient Type =</text>
+  <text class="t" x="300" y="770">"Emergency"?</text>
+
+  <!-- D4 Senior -->
+  <polygon class="diamond" points="300,910 400,950 300,990 200,950"/>
+  <text class="t" x="300" y="944">Patient Type =</text>
+  <text class="t" x="300" y="960">"Senior"?</text>
+
+  <!-- D5 Pregnant -->
+  <polygon class="diamond" points="300,1080 400,1120 300,1160 200,1120"/>
+  <text class="t" x="300" y="1114">Patient Type =</text>
+  <text class="t" x="300" y="1130">"Pregnant"?</text>
+
+  <!-- P_REG else -->
+  <rect class="box" x="190" y="1202" width="220" height="55"/>
+  <text class="t" x="300" y="1226">priority =</text>
+  <text class="t" x="300" y="1243">"REGULAR"</text>
+
+  <!-- Output -->
+  <rect class="box" x="630" y="1292" width="200" height="55"/>
+  <text class="t" x="730" y="1316">Output queueNumber,</text>
+  <text class="t" x="730" y="1333">Patient Type, Priority</text>
+
+  <!-- End -->
+  <rect class="term" x="660" y="1408" width="140" height="45"/>
+  <text class="t" x="730" y="1435">End</text>
+
+  <!-- Priority process boxes -->
+  <rect class="box" x="630" y="732" width="200" height="55"/>
+  <text class="t" x="730" y="756">priority =</text>
+  <text class="t" x="730" y="773">"EMERGENCY"</text>
+
+  <rect class="box" x="620" y="922" width="220" height="55"/>
+  <text class="t" x="730" y="946">priority =</text>
+  <text class="t" x="730" y="963">"SENIOR PRIORITY"</text>
+
+  <rect class="box" x="630" y="1092" width="200" height="55"/>
+  <text class="t" x="730" y="1116">priority =</text>
+  <text class="t" x="730" y="1133">"PRIORITY"</text>
+
+  <!-- ========= MAIN SPINE ARROWS ========= -->
+  <line class="line" x1="300" y1="65" x2="300" y2="95"/>
+  <line class="line" x1="300" y1="150" x2="300" y2="195"/>
+
+  <!-- D1 right: No -->
+  <path class="line" d="M400,235 H560"/>
+  <text class="lbl" x="480" y="228">No</text>
+  <line class="line" x1="690" y1="263" x2="690" y2="318"/>
+
+  <!-- D1 bottom: Yes -->
+  <line class="line" x1="300" y1="275" x2="300" y2="380"/>
+  <text class="lbl" x="310" y="330">Yes</text>
+
+  <!-- D2 right: No -->
+  <path class="line" d="M400,420 H560"/>
+  <text class="lbl" x="480" y="413">No</text>
+  <line class="line" x1="690" y1="447" x2="690" y2="502"/>
+
+  <!-- D2 bottom: Yes -->
+  <line class="line" x1="300" y1="460" x2="300" y2="530"/>
+  <text class="lbl" x="310" y="495">Yes</text>
+
+  <line class="line" x1="300" y1="585" x2="300" y2="615"/>
+  <line class="line" x1="300" y1="670" x2="300" y2="715"/>
+
+  <!-- D3 right: Yes -->
+  <path class="line" d="M400,760 H630"/>
+  <text class="lbl" x="510" y="753">Yes</text>
+
+  <!-- D3 bottom: No -->
+  <line class="line" x1="300" y1="805" x2="300" y2="910"/>
+  <text class="lbl" x="310" y="858">No</text>
+
+  <!-- D4 right: Yes -->
+  <path class="line" d="M400,950 H620"/>
+  <text class="lbl" x="510" y="943">Yes</text>
+
+  <!-- D4 bottom: No -->
+  <line class="line" x1="300" y1="990" x2="300" y2="1080"/>
+  <text class="lbl" x="310" y="1035">No</text>
+
+  <!-- D5 right: Yes -->
+  <path class="line" d="M400,1120 H630"/>
+  <text class="lbl" x="510" y="1113">Yes</text>
+
+  <!-- D5 bottom: No -->
+  <line class="line" x1="300" y1="1160" x2="300" y2="1202"/>
+  <text class="lbl" x="310" y="1185">No</text>
+
+  <!-- P_REG to Output -->
+  <path class="line" d="M410,1230 H530 V1320 H630"/>
+
+  <!-- Merging priority branches to Output -->
+  <path class="linePlain" d="M830,760 H880"/>
+  <path class="linePlain" d="M840,950 H880"/>
+  <path class="linePlain" d="M830,1120 H880"/>
+  <path class="linePlain" d="M880,760 V1320"/>
+  <path class="line" d="M880,1320 H830"/>
+
+  <!-- Output to End -->
+  <line class="line" x1="730" y1="1347" x2="730" y2="1408"/>
+</svg>
